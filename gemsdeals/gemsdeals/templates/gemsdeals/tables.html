@@ -1,0 +1,10 @@
+{% extends 'gemsdeals/base.html' %}
+<table border="1">
+{% for row in table_data %}
+    <tr>
+    {% for cell in row%}
+        <td>{{ cell }}</td>
+    {% endfor %}
+    </tr>
+{% endfor %}
+</table>

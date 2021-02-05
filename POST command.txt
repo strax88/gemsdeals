@@ -1,0 +1,3 @@
+curl -c cookie.txt http://localhost:8000/gemsdeals/loadcsv
+
+curl --cookie cookie.txt http://localhost:8000/gemsdeals/loadcsv -F myfile=@./deals.csv -H "X-CSRFToken: 64_ЗНАЧНЫЙ_КЛЮЧ_ИЗ_ФАЙЛА_cookie.txt"

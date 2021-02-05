@@ -1,0 +1,16 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{{ title }} |
+{#    {{ site_title|default:_('Страница администратора') }}#}
+    Страница администратора
+{#    {% block branding %}#}
+{#        <h1 id="site-name"><a href="{% url 'admin:index' %}">Страница администратора</a></h1>#}
+{#    {% endblock %}#}
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">Страница администратора</a></h1>
+{#<h1 id="site-name"><a href="{% url 'admin:index' %}">{{ site_header|default:_('Страница администратора') }}</a></h1>#}
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

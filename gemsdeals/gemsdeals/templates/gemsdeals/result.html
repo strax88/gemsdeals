@@ -1,0 +1,17 @@
+{#{% csrf_token %}#}
+
+<table border="1">
+{% for row in funds_spent %}
+    <tr>
+    {% for cell in row%}
+        <td>{{ cell }}</td>
+    {% endfor %}
+    </tr>
+{% endfor %}
+</table>
+
+{{ file_exists }}
+<br>
+
+{{ uploaded_file_url }}
+{{ uploaded_file_url_exists }}
