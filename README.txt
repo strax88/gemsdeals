@@ -14,3 +14,6 @@
  - в файле найдите 64 значный ключ, например: JbMSY2AdVSCDib4Igr71Jrxs9jhETyW2Gh1CosFhUgC6kBsq5E1fs0Z2nSKVcDHn
  - выполните команду curl --cookie cookie.txt http://localhost:8000/gemsdeals/loadcsv -F myfile=@./deals.csv -H "X-CSRFToken: 64_ЗНАЧНЫЙ_КЛЮЧ_ИЗ_ФАЙЛА_cookie.txt":
 	curl --cookie cookie.txt http://localhost:8000/gemsdeals/loadcsv -F myfile=@./deals.csv -H "X-CSRFToken: JbMSY2AdVSCDib4Igr71Jrxs9jhETyW2Gh1CosFhUgC6kBsq5E1fs0Z2nSKVcDHn"
+
+
+Для визуального ознакомления после запуска приложения необходимо перейти на http://localhost:8000 или http://localhost:8000/gemsdeals
