@@ -6,6 +6,10 @@
  - перейти в каталог ./gemsdeals
  - выполнить команду docker-compose up
 
+Пример входного файла CSV:
+customer,item,total,quantity,date
+user01,Алмаз,248,4,2020-11-18 09:51:47.231461
+
 Для отправки файла с данными необходимо иметь curl.
  - откройте консоль/командную строку/powershell
  - выполните команду curl -c cookie.txt http://localhost:8000/gemsdeals/loadcsv
